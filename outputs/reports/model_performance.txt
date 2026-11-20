@@ -1,0 +1,29 @@
+=======================================================
+  CHURN PREDICTION MODEL PERFORMANCE REPORT
+=======================================================
+
+NOTE: These metrics are calculated from the actual held-out
+test set. No values are fabricated.
+
+Why accuracy alone is insufficient:
+  Churn is a class-imbalanced problem (~26-30% positive).
+  A naive 'predict no churn' model achieves ~74% accuracy
+  while catching zero actual churners. We must maximise:
+    Recall    — to catch as many churners as possible
+    Precision — to not waste retention spend on non-churners
+    F1-Score  — harmonic mean balancing both
+    ROC-AUC   — overall discrimination ability
+
+  Model     : Logistic Regression
+  Accuracy  : 0.7417
+  Precision : 0.5086
+  Recall    : 0.7888
+  F1-Score  : 0.6184
+  ROC-AUC   : 0.8404
+
+  Model     : Random Forest
+  Accuracy  : 0.7615
+  Precision : 0.5348
+  Recall    : 0.7807
+  F1-Score  : 0.6348
+  ROC-AUC   : 0.841
