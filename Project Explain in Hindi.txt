@@ -1,0 +1,333 @@
+# **📊 Customer Churn Analysis – Project README**
+
+
+
+Data Analytics Project
+
+Power BI
+
+Python
+
+SQL
+
+Excel
+
+
+
+## **1. 📌 Project Introduction (परिचय)**
+
+**Customer Churn Analysis** एक Data Analytics Project है, जिसमें हम यह समझते हैं कि कितने customers किसी कंपनी की services लेना बंद कर रहे हैं और ऐसा करने के पीछे क्या कारण हैं।
+
+इस प्रोजेक्ट का मुख्य उद्देश्य customer छोड़ने के कारणों को पहचानना और कंपनी को ऐसे सुझाव देना है जिससे customers को लंबे समय तक बनाए रखा जा सके।
+
+**Example:**
+
+मान लीजिए एक Telecom Company के पास 10,000 customers हैं। उनमें से 2,000 customers ने अपनी services बंद कर दीं।
+
+तो हमें पता लगाना होगा:
+
+- कितने customers कंपनी छोड़ रहे हैं?
+- Customers कंपनी क्यों छोड़ रहे हैं?
+- किस age group के customers ज्यादा churn कर रहे हैं?
+- कौन-सा subscription plan सबसे ज्यादा churn हो रहा है?
+- Customers को रोकने के लिए क्या करना चाहिए?
+
+## **2. 🎯 Project Objectives (उद्देश्य)**
+
+1. Customer Churn Rate calculate करना।
+2. Customer छोड़ने के मुख्य कारण पहचानना।
+3. Monthly और yearly customer churn analyze करना।
+4. High-risk customers identify करना।
+5. Customer satisfaction और retention improve करना।
+6. Business को data-driven decisions लेने में मदद करना।
+
+## **3. 🛠️ Technologies Used (Tools)**
+
+[File:New Power BI Logo.svg - Wikimedia Commons](https://images.openai.com/static-rsc-4/-6zR20bMeYBln84UpE69z_e775KIyrSpwVc6d0uRaGKLKzwQDksR2D7zAQtTqnZf7q-8IYIjsQiwU7r_dwNQDObSygGhUGyYSjSTdVcaQSC3FaOWJNKtP-_knlcQEzm_iuQS9V2we3ZIfYLSg1lfwUqU3MoyxtrdJqxfLrHmhnU?purpose=inline)
+
+**1. Power BI 📊**
+
+- Interactive Dashboard बनाना।
+- Churn Rate visualization।
+- KPI Cards और Charts।
+- Customer Segmentation।
+- DAX Measures और Reports।
+
+[GitHub - thevkrant/morse_code: Morse code is a method of transmitting text information as a series of on-off tones lights or clicks that can be directly understood by a skilled listener or observer without special equipment. It is named for Samuel F. B. Morse. Every character in the English language is substituted by a series of dots and dashes or something just singular dot or dash. · GitHub](https://images.openai.com/static-rsc-4/urfnHK6zfHhc4B3R1e0oqA7y8Vz4MVLbH4OkbEzp4ebiLf4GTPEzcrMq0g_u9dOKD9WtiCsX1xicbi1zCOCmsU7j0U2CpN8O76md71nd7cu1RcWbDdn6SDRiXMKinT5IfvrkoqB5kmNDq66qlVhyACf4H_8owV3q1znxDE3C7JE?purpose=inline)
+
+**2. Python 🐍**
+
+- Data Cleaning।
+- Missing Values Handle करना।
+- Exploratory Data Analysis (EDA)।
+- Pandas और NumPy।
+- Matplotlib और Seaborn Visualization।
+- Machine Learning से Churn Prediction।
+
+[My Project | Duc Nguyen HTML Hub](https://images.openai.com/static-rsc-4/uerqhzIN_j1lCvWSZXSjX-vKmqOZHobyb6SpEaQi1Akccw-PXUAssaLKHM67EWTjXLBnc07LPRln-0l0JHqAu4ikDeCtJIyhH8-rPOo3MY_kPSs5en9RXoKOfI4erKE7rGXqJT7OpHfAJxtZA_9XPYlkCtH36enUB61DuNGQDFA?purpose=inline)
+
+**3. SQL 🗄️**
+
+- Customer Data Fetch करना।
+- SELECT, WHERE, GROUP BY।
+- JOIN Operations।
+- Aggregate Functions।
+- Subqueries और CTEs।
+- Churn Rate Calculate करना।
+
+[Überschriften in Excel auf jeder Seite anzeigen oder drucken](https://images.openai.com/static-rsc-4/1Yo_K7VNctBsFePdiKxNKnd7_3peKWyWd-w2JpoDoSfx9flu9xvqJDJx7H43cs4daJfZymIpKWklCIthiFLqR251VYLeFnabuGpvQejeTiAW5lABOAqfLkn43h1D0OoJLvv3QHrRVLp7mnaQVrLDsbv-FOl1JOg_m8g8UL8xvu8?purpose=inline)
+
+**4. Microsoft Excel 📗**
+
+- Data Cleaning।
+- Remove Duplicates।
+- Pivot Tables।
+- VLOOKUP और XLOOKUP।
+- IF, COUNTIF, SUMIF।
+- Charts और Basic Analysis।
+
+## **4. 📂 Dataset Description**
+
+इस प्रोजेक्ट में Telecom Customer Dataset का उपयोग किया जा सकता है।
+
+| Column Name     | Description                      |
+| --------------- | -------------------------------- |
+| CustomerID      | Unique Customer ID               |
+| Gender          | Male / Female                    |
+| SeniorCitizen   | Senior Citizen Status            |
+| Tenure          | कितने महीने से Customer जुड़ा है |
+| Contract        | Monthly / Yearly Contract        |
+| MonthlyCharges  | Monthly Bill                     |
+| TotalCharges    | Total Bill                       |
+| InternetService | Internet Service Type            |
+| PaymentMethod   | Payment Method                   |
+| Churn           | Customer छोड़ चुका है या नहीं    |
+
+**Churn Column:**
+
+- Yes = Customer कंपनी छोड़ चुका है।
+- No = Customer अभी भी कंपनी के साथ है।
+
+## **5. 🔄 Project Workflow**
+
+1. **📥 Data Collection**
+
+   Dataset को CSV या Excel File से Import करना।
+2. **🧹 Data Cleaning – Excel & Python**
+
+   Missing values, duplicates और incorrect data ठीक करना।
+3. **🗄️ Data Analysis – SQL**
+
+   SQL Queries के माध्यम से customer patterns निकालना।
+4. **📈 Exploratory Data Analysis – Python**
+
+   Charts और statistical analysis से trends समझना।
+5. **📊 Dashboard Development – Power BI**
+
+   Interactive Dashboard और KPI बनाना।
+6. **💡 Business Insights**
+
+   Churn के कारण और customer retention strategies बताना।
+
+## **6. 🧮 Important Formulas**
+
+**Customer Churn Rate**
+
+\\[ Churn\ Rate = \frac{Customers\ Lost}{Total\ Customers}\times100 \\]
+
+Example:
+
+- Total Customers = 1,000
+- Customers Lost = 200
+
+\\[ Churn\ Rate = \frac{200}{1000}\times100=20\\% \\]
+
+Result: 20% Churn Rate
+
+**Customer Retention Rate**
+
+\\[ Retention\ Rate = \frac{Customers\ Retained}{Total\ Customers}\times100 \\]
+
+**Average Monthly Charges**
+
+\\[ Average = \frac{Total\ Monthly\ Charges}{Total\ Customers} \\]
+
+## **7. 💻 SQL Practical Queries**
+
+**Query 1: Total Customers**
+
+```
+SELECT COUNT(CustomerID) AS Total_Customers
+FROM Customers;
+```
+
+**Query 2: Churned Customers**
+
+```
+SELECT COUNT(*) AS Churn_Customers
+FROM Customers
+WHERE Churn = 'Yes';
+```
+
+**Query 3: Churn by Gender**
+
+```
+SELECT Gender,
+       COUNT(*) AS Total_Customers
+FROM Customers
+WHERE Churn = 'Yes'
+GROUP BY Gender;
+```
+
+**Query 4: Churn by Contract**
+
+```
+SELECT Contract,
+       COUNT(*) AS Churn_Count
+FROM Customers
+WHERE Churn = 'Yes'
+GROUP BY Contract;
+```
+
+**Query 5: Average Monthly Charges**
+
+```
+SELECT AVG(MonthlyCharges)
+AS Average_Monthly_Charges
+FROM Customers;
+```
+
+## **8. 🐍 Python Practical Analysis**
+
+```
+import pandas as pdimport matplotlib.pyplot as pltimport seaborn as sns# Load Datasetdf = pd.read_csv("customer_churn.csv")# Display Dataprint(df.head())# Dataset Informationprint(df.info())# Missing Valuesprint(df.isnull().sum())# Churn Countprint(df['Churn'].value_counts())# Churn Visualizationsns.countplot(data=df, x='Churn')plt.title("Customer Churn Analysis")plt.xlabel("Churn Status")plt.ylabel("Number of Customers")plt.show()# Churn Percentagechurn_rate = (    df['Churn'].value_counts(normalize=True) * 100)print(churn_rate)
+```
+
+## **9. 📗 Excel Analysis**
+
+Excel में निम्नलिखित Functions का उपयोग कर सकते हैं:
+
+| Formula                         | Purpose                 |
+| ------------------------------- | ----------------------- |
+| `=COUNT(A2:A100)`               | Total Numeric Records   |
+| `=COUNTA(A2:A100)`              | Total Non-empty Records |
+| `=COUNTIF(J2:J100,"Yes")`       | Churn Customers         |
+| `=AVERAGE(F2:F100)`             | Average Charges         |
+| `=SUM(F2:F100)`                 | Total Charges           |
+| `=IF(J2="Yes","Lost","Active")` | Customer Status         |
+
+**Excel में Pivot Table:**
+
+- Rows: Contract
+- Columns: Churn
+- Values: Count of CustomerID
+
+इससे पता चलेगा कि किस Contract Type में कितने customers कंपनी छोड़ रहे हैं।
+
+## **10. 📊 Power BI Dashboard Design**
+
+[Churn-Analysis-Dashboard | Kuhle](https://images.openai.com/static-rsc-4/IG0GfJ0dwlgirrY3dO1AqRSb3IDpUqUCma20yE6r_EKcO_YJSm0wQE2wtXAY00cAd_BX5eTL7DH6jMBdgvDhphu8ToZfatAMyoL6g-EyxmP2dnGaTWcQXCbJQzAegTW4i10sPh8OJHoOLg5XTRJgMK65CeYn4zS-By7DHtIdWVc?purpose=inline)
+
+[Telco Customer Churn Analysis PowerBI Dashboard. Dataset --> https://lnkd.in/g7siKE-Z | Emelyn A.](https://images.openai.com/static-rsc-4/PA2gFa51NGuT3y_aHn2atRM9WJsEQXN2NZpE7lMv-6CgGWP_FZ4qJZLpe0NSrBy69tbQOu7RhN3VCi3OoJiiRotN7IYr48GLalJTsxpRNqAIf8xVabfEigutAnZFiaMU3SVFF5oE6Itd-TPb-b5jkDF1EHPYPb9dPvmNzein6i0?purpose=inline)
+
+[Hello everyone, I have created a power bi report on Customer Churn analysis 📈 Decoding the Patterns: Unveiling Customer Churn Insights with Data Analytics Source:  Kaggle Thanks for your guidance… | Aishwarya Pawar](https://images.openai.com/static-rsc-4/JTbvE0GHteB2eIDFKjIYVd4IBlrXHMr7hyajZ4DYawwJGxM9KjUaMJVt3WSsFBP-Jogg7ZrqTcYP-qxCx4iUvqEqRy1pVCYxgOsdHSEhtWZHKS97y3ZRW50_kwtOwpeBkHHxWtWp45Wt8E7bKyj8UlgYjlSrAZ3WoUcXlfm0ZAQ?purpose=inline)
+
+9
+
+Dashboard में ये KPIs और Charts होने चाहिए:
+
+| KPI / Chart             | Purpose                   |
+| ----------------------- | ------------------------- |
+| Total Customers         | कुल Customers             |
+| Churned Customers       | कंपनी छोड़ने वाले         |
+| Churn Rate %            | Customer Churn Percentage |
+| Retention Rate %        | Customer Retention        |
+| Churn by Gender         | Gender-wise Analysis      |
+| Churn by Contract       | Contract-wise Analysis    |
+| Churn by Tenure         | Tenure Analysis           |
+| Churn by Payment Method | Payment Analysis          |
+
+**Power BI DAX Measures:**
+
+```
+Total Customers =
+COUNTROWS(Customers)
+```
+
+```
+Churn Customers =
+CALCULATE(
+    COUNTROWS(Customers),
+    Customers[Churn] = "Yes"
+)
+```
+
+```
+Churn Rate =
+DIVIDE(
+    [Churn Customers],
+    [Total Customers],
+    0
+) * 100
+```
+
+## **11. 💡 Key Business Insights**
+
+इस प्रोजेक्ट के Analysis के बाद हम निम्नलिखित प्रकार के Insights निकाल सकते हैं (ये उदाहरण हैं, वास्तविक निष्कर्ष Dataset पर निर्भर करेंगे):
+
+- 📉 Monthly Contract वाले Customers का churn अधिक हो सकता है।
+- ⏳ नए Customers के कंपनी छोड़ने की संभावना अधिक हो सकती है।
+- 💰 High Monthly Charges Customer Churn को प्रभावित कर सकते हैं।
+- 💳 Payment Method के अनुसार Churn में अंतर हो सकता है।
+- 📞 Customer Support और Service Quality का असर हो सकता है।
+
+## **12. 🚀 Business Recommendations**
+
+1. 🎁 Loyal Customers को Special Discounts देना।
+2. 📞 Customer Support बेहतर करना।
+3. 💰 Affordable Subscription Plans देना।
+4. 🎯 High-risk Customers के लिए Retention Campaign चलाना।
+5. ⭐ Customer Feedback नियमित रूप से लेना।
+6. 📧 Personalized Offers भेजना।
+
+## **13. 📁 Project Folder Structure**
+
+```
+Customer-Churn-Analysis/
+│
+├── Dataset/
+│   └── customer_churn.csv
+│
+├── Excel/
+│   └── churn_analysis.xlsx
+│
+├── Python/
+│   └── churn_analysis.ipynb
+│
+├── SQL/
+│   └── churn_queries.sql
+│
+├── PowerBI/
+│   └── churn_dashboard.pbix
+│
+├── Images/
+│   └── dashboard.png
+│
+└── README.md
+```
+
+## **14. 🎓 Conclusion (निष्कर्ष)**
+
+Customer Churn Analysis एक महत्वपूर्ण Data Analytics Project है, जिसमें Python, SQL, Excel और Power BI का उपयोग करके Customer Behaviour को समझा जाता है।
+
+इस Project से हमें पता चलता है कि Customers कंपनी क्यों छोड़ रहे हैं, कौन-से Factors Churn को प्रभावित कर रहे हैं और कंपनी किस प्रकार Customer Retention बढ़ा सकती है।
+
+यह Project Data Analyst, Business Analyst और Junior Data Scientist के लिए एक अच्छा Portfolio Project है।
+
+## **🏷️ GitHub Project Tags**
+
+`#CustomerChurnAnalysis` `#PowerBI` `#Python` `#SQL` `#Excel` `#DataAnalytics` `#DataVisualization` `#BusinessIntelligence` `#EDA` `#MachineLearning`
+
+**✨ Created By: Data Analytics Project**
+
+अगर आप चाहें तो मैं इसका एक complete practical project भी बना सकता हूँ, जिसमें Dataset, Python Notebook, SQL Queries, Excel Analysis, Power BI Dashboard और Professional GitHub README शामिल हों।
